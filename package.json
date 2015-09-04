@@ -1,0 +1,32 @@
+{
+  "name": "kmeans",
+  "version": "0.0.1",
+  "description": "K-means project",
+  "main": "app.js",
+  "scripts": {
+    "dev": "gulp",
+    "test": "gulp test"
+  },
+  "author": "Panayiotis Vlantis",
+  "license": "BSD",
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-nodemon": "~2.0.3",
+    "browser-sync": "~2.7.12",
+    "gulp-autoprefixer": "~2.3.1",
+    "gulp-sass": "~2.0.1",
+    "coffee-script": "~1.9.3",
+    "gulp-coffee": "~2.3.1",
+    "gulp-jasmine": "~2.0.1",
+    "gulp-sourcemaps": "~1.5.2",
+    "gulp-util": "~3.0.6",
+    "gulp-concat": "~2.6.0",
+    "gulp-spawn": "~0.3.0",
+    "docco": "~0.7.0",
+    "gulp-uglify": "~1.2.0"
+  },
+  "dependencies": {
+    "express": "~4.13.0",
+    "jade": "~1.11.0"
+  }
+}

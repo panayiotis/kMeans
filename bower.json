@@ -1,0 +1,23 @@
+{
+  "name": "kmeans",
+  "version": "0.0.0",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "~3.5.5",
+    "jquery": "~2.1.4",
+    "lodash": "~3.9.3",
+    "foundation": "~5.5.2",
+    "backbone": "~1.2.1",
+    "highlightjs": "~8.5.0"
+  }
+}

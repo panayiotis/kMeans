@@ -1,0 +1,81 @@
+doctype html
+html
+  head
+    title!= title
+    style(media='all')
+      = stylesheets
+    
+  body
+    .row
+      h1 kMeans clustering algorithm
+      .panel.callout
+        h1 Features
+        dl
+          dt kMeans library
+          dd
+            | kMeans library is written in coffeescript (which compiles to javascript).
+            | It can be run in a Nodejs environment as a module or included in an html page
+            | as a script &nbsp;
+            a.pale(href='#kmeans') annotated source code
+          dt Visualization
+          dd
+            | Visualizations have two dimensions thus only two features are repressented the each visualization at once.
+            | Centroids and their convergence paths are also represented in the visualization.
+            | Because kMeans picks random centroids on initialization, every time the page loads the results are different.
+            | D3.js library is used to create kMeans visualizations.
+          dt Test Driven Development
+          dd
+            | kMeans is developed using the Test Driven Development paradigm.
+            | The library's functionality is tested using jasmine js testing framework. &nbsp;
+            a.pale(href='#tdd') annotated source code
+      
+      
+      h2 Iris Visualization
+      h3 Description
+      ul
+        li Every circle in the visualization represents a point of the dataset.
+        li The fill color of the circle represents their class which is declared in the dataset file.
+        li Points that are circled red have been classified incorrectly by the algorithm.
+        li Centroids are repressented by bigger circles and their convergence history is represented as a path.
+      
+      #iris1
+    
+    .row
+      h1 Iris Visualization in different axis
+      #iris2
+    
+    .row
+      h1 Yeast Visualization
+      ul
+        li There are a lot of points classified incorectly (points with red perimeter).
+          li
+            | Many clusters are marked as inconclusive.
+            | This means that they have a lot of points from another cluster.
+      #yeast.visualization
+    
+    .row
+      h1#kmeans Annotated source sode
+      p
+        | kMeans library is written in coffeescript (which compiles to javascript).
+        | It can be run in a Nodejs environment as a module or included in an html page
+        | as a script
+      pre
+        code.coffeescript
+          |!{code}
+
+    .row
+      h1#tdd Test Driven Development
+      p
+        | kMeans is developed using the Test Driven Development paradigm.
+        | The library's functionality is tested using jasmine js testing framework. 
+      pre
+        code.coffeescript
+          |!{tests}
+    script
+      |window.iris_data = !{JSON.stringify(iris_data)};
+      |window.yeast_data = !{JSON.stringify(yeast_data)};
+    script(type='text/javascript')
+      |!{javascripts}
+      |hljs.initHighlightingOnLoad();
+    
+      

@@ -1,0 +1,42 @@
+html, body {
+  margin:0;
+  padding:0;
+}
+
+h1, h2, h3, h4, h5, dt{
+  font-family: 'PT Sans', sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+span.hljs-comment{
+  color: SaddleBrown;
+}
+
+.legend{
+  font: 12px sans-serif;
+}
+
+dt{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+dd{
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.panel.callout{
+  a{
+    font-style: italic;
+    font-size: 16px;
+    text-decoration: none;
+  }
+}
